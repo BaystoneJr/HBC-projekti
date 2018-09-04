@@ -55,7 +55,9 @@ void sendToAPI() {
     JsonObject& sendedJson = jsonBuffer.createObject();
 
     sendedJson["ESP_ID"] = esp_id;
-    sendedJson["ESP_nro"] = "BCH_ESP_1" ;
+
+    
+    
 
 
     http.begin(HostIP);
