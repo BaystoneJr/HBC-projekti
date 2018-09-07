@@ -9,6 +9,20 @@
 #include "secrets.h"
 #include "mhz19.h"
 
+#define DHTPIN D3
+#define DHTTYPE DHT22
+DHT dht(DHTPIN, DHTTYPE);
+
+HardwareSerial sensor(1);
+/*
+#define PIN_RX D1
+#define PIN_TX D2
+
+SoftwareSerial sensor(PIN_RX, PIN_TX);
+
+*/
+
+
 
 static char esp_id[16];
 
